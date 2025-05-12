@@ -15884,8 +15884,8 @@ function requireClient () {
 var clientExports = requireClient();
 
 const remotesMap = {
-'loginApp':{url:'http://localhost:4173/assets/remoteEntry.js',format:'esm',from:'vite'},
-  'taskApp':{url:'http://localhost:4174/assets/remoteEntry.js',format:'esm',from:'vite'}
+'loginApp':{url:'https://arfazappu.github.io/login-remote-app/assets/remoteEntry.js',format:'esm',from:'vite'},
+  'taskApp':{url:'https://arfazappu.github.io/task-remote-app/assets/remoteEntry.js',format:'esm',from:'vite'}
 };
                 const currentImports = {};
                 const loadJS = async (url, fn) => {
