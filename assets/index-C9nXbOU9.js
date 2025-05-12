@@ -15980,7 +15980,7 @@ const remotesMap = {
                     return __federation_method_ensure(remoteName).then((remote) => remote.get(componentName).then(factory => factory()));
                 }
 
-const scriptRel = 'modulepreload';const assetsURL = function(dep) { return "/"+dep };const seen = {};const __vitePreload = function preload(baseModule, deps, importerUrl) {
+const scriptRel = 'modulepreload';const assetsURL = function(dep) { return "/host-app/"+dep };const seen = {};const __vitePreload = function preload(baseModule, deps, importerUrl) {
   let promise = Promise.resolve();
   if (true               && deps && deps.length > 0) {
     let allSettled2 = function(promises) {
