@@ -23789,7 +23789,7 @@ function App() {
     };
   }, []);
   if (isLoggedIn === null) return /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Checking session..." });
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { basename: "/host-app/", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: isLoggedIn ? "/dashboard" : "/login" }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/login", element: /* @__PURE__ */ jsxRuntimeExports.jsx(React.Suspense, { fallback: "Loading...", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Login, {}) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/dashboard", element: isLoggedIn ? /* @__PURE__ */ jsxRuntimeExports.jsx(React.Suspense, { fallback: "Loading...", children: /* @__PURE__ */ jsxRuntimeExports.jsx(TaskDashboard, {}) }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: "/login" }) })
