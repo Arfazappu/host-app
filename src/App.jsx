@@ -26,7 +26,7 @@ function App() {
   if (isLoggedIn === null) return <p>Checking session...</p>;
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/host-app/">
       <Routes>
         <Route path="/" element={<Navigate to={isLoggedIn ? '/dashboard' : '/login'} />} />
         <Route path="/login" element={<React.Suspense fallback="Loading..."><Login /></React.Suspense>} />
