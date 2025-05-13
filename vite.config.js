@@ -4,7 +4,7 @@ import federation from '@originjs/vite-plugin-federation'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/host-app/',
+  base: '/',
   plugins: [react(),
   federation({
     name: 'hostApp',
