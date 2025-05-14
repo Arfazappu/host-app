@@ -15884,8 +15884,8 @@ function requireClient () {
 var clientExports = requireClient();
 
 const remotesMap = {
-'loginApp':{url:'https://arfazappu.github.io/login-remote-app/assets/remoteEntry.js',format:'esm',from:'vite'},
-  'taskApp':{url:'https://arfazappu.github.io/task-remote-app/assets/remoteEntry.js',format:'esm',from:'vite'}
+'loginApp':{url:'https://login-remote-app.vercel.app/assets/remoteEntry.js',format:'esm',from:'vite'},
+  'taskApp':{url:'https://task-remote-app.vercel.app/assets/remoteEntry.js',format:'esm',from:'vite'}
 };
                 const currentImports = {};
                 const loadJS = async (url, fn) => {
@@ -15980,7 +15980,7 @@ const remotesMap = {
                     return __federation_method_ensure(remoteName).then((remote) => remote.get(componentName).then(factory => factory()));
                 }
 
-const scriptRel = 'modulepreload';const assetsURL = function(dep) { return "/host-app/"+dep };const seen = {};const __vitePreload = function preload(baseModule, deps, importerUrl) {
+const scriptRel = 'modulepreload';const assetsURL = function(dep) { return "/"+dep };const seen = {};const __vitePreload = function preload(baseModule, deps, importerUrl) {
   let promise = Promise.resolve();
   if (true               && deps && deps.length > 0) {
     let allSettled2 = function(promises) {
